@@ -21,6 +21,7 @@ public class EventSimulation {
 
     public static void main(String[] args) {
         HashMap<Integer,Integer> eventOutcomes = new HashMap<>();
+        // Assume Head , Tail Example - [1:35,2:65]  1= indicate Head , 2 indiacate Tail
         eventOutcomes.put(1,35);
         eventOutcomes.put(2,65);
         SimulateEvent(eventOutcomes);
@@ -28,7 +29,7 @@ public class EventSimulation {
 
     public static void SimulateEvent(Map<Integer,Integer>outcomes){
         int  TotalCounts = 1000 ;
-       Map<Integer,Integer> outcomeCounts = new HashMap<>();
+       Map<Integer,Integer> outcomeCounts = new HashMap<>(); // Creating map for Outcome and probability
 
         for (int outcome : outcomes.keySet()) {
             outcomeCounts.put(outcome, 0);
@@ -36,7 +37,7 @@ public class EventSimulation {
         Random random = new Random();
 
         for(int i =0 ; i < TotalCounts ; i++){
-            int randomNumber = random.nextInt(100)+1;
+            int randomNumber = random.nextInt(100)+1;   // Generating random number from 0 to 100 to stimulate probability
             // Determining Outcomes based on Probabilities
             int  cumulativeProbability = 0;
             int outcome ;
