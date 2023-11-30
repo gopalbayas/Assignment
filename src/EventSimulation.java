@@ -17,11 +17,17 @@ Input [ {“Head”: 35}, {“Tail”: 65} ]
 Rules
 Input: 1.Probabilities given are as integers and percentages.
  */
+// Answer code -->
+//Instruction
+/*
+1. Save thecode in a file as'EventSimulation.java'.
+2. Run the compiled code using 'java EventSimulation'.
+*/
 public class EventSimulation {
 
     public static void main(String[] args) {
         HashMap<Integer,Integer> eventOutcomes = new HashMap<>();
-        // Assume Head , Tail Example - [1:35,2:65]  1= indicate Head , 2 indiacate Tail
+        // Assume Head , Tail Example - [1:35,2:65]  1  indicate Head , 2 indiacate Tail
         eventOutcomes.put(1,35);
         eventOutcomes.put(2,65);
         SimulateEvent(eventOutcomes);
