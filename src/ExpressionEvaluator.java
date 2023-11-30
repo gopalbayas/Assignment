@@ -71,7 +71,7 @@ public class ExpressionEvaluator {
 
 // Instruction
 /*
-Ensure you are using java 11 or advance version because here we are using 'HttpClient' to make Http request to a web API.
+Ensure you are using java 11 or advance version because here we are using 'HttpClient' for make Http request to a web API.
 save the file name as = ' ExpressionEvaluator.java '
 compliance the code  using  'javac ExpressionEvaluator.java '
  */
